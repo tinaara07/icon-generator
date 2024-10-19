@@ -23,3 +23,33 @@ function generateSVG(shape, text, textColor, shapeColor) {
     </svg>
     `;
 }
+
+// Prompt user for input
+inquirer.prompt([
+    {
+        type: 'input',
+        name: 'text',
+        message: 'Enter up to three characters for the logo text:',
+        validate: input => input.length <= 3 ? true : 'Text must be three characters or less.'
+    },
+    {
+        type: 'input',
+        name: 'textColor',
+        message: 'Enter a color keyword or a hexadecimal number for the text color:'
+    },
+    {
+        type: 'list',
+        name: 'shape',
+        message: 'Choose a shape for the logo:',
+        choices: ['circle', 'triangle', 'square','ellipse',]
+    },
+    {
+        type: 'input',
+        name: 'shapeColor',
+        message: 'Enter a color keyword or a hexadecimal number for the shape color:'
+    }
+]).then(answers => {
+    const svgContent = generateSVG(answers.shape, answers.text, answers.textColor, answers.shapeColor);
+    fs.writeFileSync('icon.svg', svgContent);
+    console.log('Generated icon.svg');
+});
