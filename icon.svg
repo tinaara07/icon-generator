@@ -1,6 +1,6 @@
 
     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="150" cy="100" rx="80" ry="40" fill="pink" stroke="black" stroke-width="3"/>
-        <text x="150" y="125" font-size="48" text-anchor="middle" fill="white">YRY</text>
+        <polygon points="150,20 250,200 50,200" fill="purple" stroke="black" stroke-width="3"/>
+        <text x="150" y="125" font-size="48" text-anchor="middle" fill="blue">BRB</text>
     </svg>
     

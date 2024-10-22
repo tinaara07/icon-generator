@@ -14,3 +14,6 @@ Outputs confirmation message in the command line upon creation of the SVG file
 ![alt text](<Untitled Video October 21, 2024 10_38 PM.gif>)
 
 ![alt text](<Untitled Video October 21, 2024 10_29 PM-1.gif>)
+
+![alt text](image.png)
+![alt text](image-1.png)
