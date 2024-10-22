@@ -1,3 +1,4 @@
+//create classes for each shape and render and area functions
 class Shape {
     constructor(color) {
         this.color = color;
@@ -58,7 +59,7 @@ class Ellipse extends Shape {
     }
 
     render() {
-        return `<ellipse cx="150" cy="100" rx="80" ry="$40" fill="${this.color}" stroke="black" stroke-width="3"/>`;
+        return `<ellipse cx="150" cy="100" rx="80" ry="40" fill="${this.color}" stroke="black" stroke-width="3"/>`;
     }    
 
     area() {
