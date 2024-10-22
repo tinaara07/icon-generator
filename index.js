@@ -1,18 +1,23 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { Triangle, Circle, Square, Ellipse } = require('./library/shapes');
 
 // Function to generate SVG content
 function generateSVG(shape, text, textColor, shapeColor) {
     let shapeSVG = '';
     if (shape === 'circle') {
-        shapeSVG = `<circle cx="150" cy="100" r="80" fill="${shapeColor}" stroke="black" stoke-width="3"/>`;
+     const circle = new Circle (shapeColor, 5)
+        shapeSVG = circle.render();
     } else if (shape === 'triangle') {
-        shapeSVG = `<polygon points="150,20 250,200 50,200" fill="${shapeColor}" stroke="black" stoke-width="3"/>`;
+        const triangle=new Triangle(shapeColor, 5)
+        shapeSVG = triangle.render();
     } else if (shape === 'square') {
-        shapeSVG = `<rect x="70" y="20" width="160" height="160" fill="${shapeColor}"stroke="black" stoke-width="3" />`;
+        const square= new Square(shapeColor,5)
+        shapeSVG = square.render();
     } else if (shape === 'ellipse') {
-        shapeSVG = `<ellipse cx="150" cy="100" rx="80" ry="40" fill="${shapeColor}"stroke="black" stoke-width="3"/>`;
+        const ellipse = new Ellipse(shapeColor,5)
+        shapeSVG = ellipse.render();
     }
 
 
