@@ -9,3 +9,8 @@ Presents a list of shapes to choose from: circle, triangle, square and ellipse
 Allows selection of shape color (via color keywords or hexadecimal values)
 Generates an SVG file named icon.svg
 Outputs confirmation message in the command line upon creation of the SVG file
+
+
+![alt text](<Untitled Video October 21, 2024 10_38 PM.gif>)
+
+![alt text](<Untitled Video October 21, 2024 10_29 PM-1.gif>)
